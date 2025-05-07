@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bootable -->
+  <remove-project name="bootable_recovery" remote="PixelOS" />
+
+  <!-- Build and Core -->
+  <remove-project name="bionic" remote="PixelOS" />
+  <remove-project name="build" remote="PixelOS" />
+  <remove-project name="build_soong" remote="PixelOS" />
+  <remove-project name="platform/art" />
+
+  <!-- Device -->
+  <remove-project name="device_lineage_sepolicy" remote="PixelOS" />
+
+  <!-- External -->
+  <remove-project name="platform/external/lz4" />
+
+  <!-- Frameworks -->
+  <remove-project name="frameworks_av" remote="PixelOS" />
+  <remove-project name="frameworks_base" remote="PixelOS" />
+  <remove-project name="frameworks_native" remote="PixelOS" />
+
+  <!-- Packages -->
+  <remove-project name="LineageOS/android_packages_modules_Bluetooth" />
+  <remove-project name="LineageOS/android_packages_modules_Wifi" />
+  <remove-project name="packages_apps_ColumbusService" remote="PixelOS" />
+  <remove-project name="packages_apps_ParanoidSense" remote="PixelOS" />
+  <remove-project name="packages_apps_Settings" remote="PixelOS" />
+  <remove-project name="packages_apps_TouchGestures" remote="PixelOS" />
+  <remove-project name="packages_apps_Updater" remote="PixelOS" />
+  <remove-project name="packages_modules_Connectivity" remote="PixelOS" />
+  <remove-project name="packages_services_Telecomm" remote="PixelOS" />
+
+  <!-- System -->
+  <remove-project name="system_core" remote="PixelOS" />
+
+  <!-- Vendor -->
+  <remove-project name="vendor_aosp" remote="PixelOS" />
+  <remove-project name="vendor_custom-preference" remote="PixelOS" />
+  <remove-project name="vendor_gms" remote="PixelOS-Gitlab" />
+  <remove-project name="vendor_google_overlays_ThemeIcons" remote="PixelOS" />
+
+</manifest>

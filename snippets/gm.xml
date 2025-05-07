@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pixelos-gm"
+           fetch="https://github.com/pos-gm"
+           revision="refs/heads/fifteen" />
+
+  <remote  name="kei"
+           fetch="https://gitlab.com/kei-space/pixelos"
+           revision="refs/heads/fifteen" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="pixelos-gm" />
+
+  <!-- Build and Core -->
+  <project path="art" name="art" remote="pixelos-gm" />
+  <project path="bionic" name="bionic" remote="pixelos-gm" />
+  <project path="build/make" name="build" remote="pixelos-gm">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="pixelos-gm">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="pixelos-gm" />
+
+  <!-- External -->
+  <project path="external/lz4" name="external_lz4" remote="pixelos-gm" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="pixelos-gm" />
+  <project path="frameworks/base" name="frameworks_base" remote="pixelos-gm" />
+  <project path="frameworks/native" name="frameworks_native" remote="pixelos-gm" />
+
+  <!-- Hardware (QCOM) -->
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom_audio" remote="pixelos-gm" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom_display" remote="pixelos-gm" />
+
+  <!-- Packages -->
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="pixelos-gm" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="pixelos-gm" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixelos-gm" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixelos-gm" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="pixelos-gm" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixelos-gm" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixelos-gm" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="pixelos-gm" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixelos-gm" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="pixelos-gm" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="pixelos-gm" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixelos-gm" />
+  <project path="vendor/extra" name="vendor_extra" remote="kei" />
+  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="kei" />
+  <project path="vendor/overlays/ThemeIcons" name="vendor_overlays_ThemeIcons" remote="pixelos-gm" />
+  <project path="vendor/overlays/translations" name="translations" remote="kei" />
+
+</manifest>
