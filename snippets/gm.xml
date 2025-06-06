@@ -45,12 +45,14 @@
 
   <!-- Packages -->
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="pixelos-gm" />
+  <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="pixelos-gm" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="pixelos-gm" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixelos-gm" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixelos-gm" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="pixelos-gm" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixelos-gm" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixelos-gm" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="pixelos-gm" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="pixelos-gm" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixelos-gm" />
 

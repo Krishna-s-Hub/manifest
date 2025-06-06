@@ -31,6 +31,8 @@
   <remove-project name="packages_apps_Updater" remote="PixelOS" />
   <remove-project name="packages_modules_Connectivity" remote="PixelOS" />
   <remove-project name="packages_services_Telecomm" remote="PixelOS" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <remove-project name="platform/packages/modules/Permission" />
 
   <!-- System -->
   <remove-project name="system_core" remote="PixelOS" />
