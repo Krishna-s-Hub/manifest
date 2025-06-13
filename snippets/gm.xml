@@ -32,6 +32,7 @@
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="pixelos-gm" />
 
   <!-- External -->
+  <project path="external/bouncycastle" name="external_bouncycastle" remote="pixelos-gm" />
   <project path="external/lz4" name="external_lz4" remote="pixelos-gm" />
 
   <!-- Frameworks -->
