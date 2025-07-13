@@ -5,6 +5,10 @@
            fetch="https://github.com/pos-gm"
            revision="refs/heads/fifteen" />
 
+  <remote  name="custom"
+           fetch="https://github.com/Krishna-s-Hub"
+           revision="refs/heads/fifteen" />
+
   <remote  name="kei"
            fetch="https://gitlab.com/kei-space/pixelos"
            revision="refs/heads/fifteen" />
@@ -37,7 +41,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" remote="pixelos-gm" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixelos-gm" />
+  <project path="frameworks/base" name="posgm_base" remote="custom" />
   <project path="frameworks/native" name="frameworks_native" remote="pixelos-gm" />
 
   <!-- Hardware (QCOM) -->
@@ -48,7 +52,7 @@
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="pixelos-gm" />
   <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="pixelos-gm" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="pixelos-gm" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixelos-gm" />
+  <project path="packages/apps/Settings" name="posgm_Settings" remote="custom" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixelos-gm" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="pixelos-gm" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixelos-gm" />
